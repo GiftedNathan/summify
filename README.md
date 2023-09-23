@@ -2,6 +2,12 @@
 
 Summify, powered by GPT AI, offers the remarkable ability to distill the essence of web page content into concise, easy-to-read summaries. With this innovative tool, users can quickly grasp the key points and important information from lengthy articles, news stories, or blog posts, saving them valuable time and effort in their online research. Whether for staying informed, conducting research, or simply getting a quick overview of a topic, your app provides a convenient and efficient way to access the most relevant content, empowering users to make well-informed decisions and stay ahead in the information age.
 
+Summify app not only excels at summarizing web page content but also offers valuable additional features. In addition to providing succinct text summaries, it has the capability to:
+
+1. Text-to-Speech (TTS) Functionality: Users can listen to the summarized content being spoken aloud, enhancing accessibility and convenience for individuals who prefer auditory information consumption.
+
+2. Clipboard Copying: Users can easily copy the summarized text to their device's clipboard, allowing them to quickly paste it into other applications or documents for further use or reference.
+
 # Technology used
 
 - Built with Reactjs, TailwindCSS and GPT AI
