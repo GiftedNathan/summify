@@ -6,7 +6,7 @@ const Header = () => {
             <img src={brainImage} alt="logo image" className='lg:w-10 md:w-9 w-7 '/>
             <span className='font-bold text-slate-50 lg:text-3xl md:text-2xl text-xl font-mono'>Summify</span>
         </a>
-        <button className='text-slate-50 hover:text-slate-900 md:text-base text-sm font-semibold md:py-2 py-1 md:px-4 px-2 rounded-xl bg-black hover:bg-slate-100'>Github</button>
+        <a href="https://github.com/GiftedNathan/summify" target="_blank" rel="noopener noreferrer" className='text-slate-50 hover:text-slate-900 md:text-base text-sm font-semibold md:py-2 py-1 md:px-4 px-2 rounded-xl bg-black hover:bg-slate-100'>Github</a>
     </header>
   )
 }

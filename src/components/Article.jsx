@@ -7,7 +7,7 @@ import { useState } from 'react';
 
 const Article = () => {
 
-    const [summarizedData, setSummarizedData] = useState('ilove teni');
+    const [summarizedData, setSummarizedData] = useState('');
     const [error, setError] = useState('') ;
     const [loading, setLoading] = useState(false);
 
@@ -123,7 +123,7 @@ const Article = () => {
             
             <div className="max-w-lg mb-12 m-auto flex flex-col">
                 <p className='my-4 md:text-lg text-sm text-slate-300 text-center'>Do you know you can translate your summarized text to any language? Yes you can, all you have to do is copy the text and hit the botton below</p>
-                <a href="#" target="_blank" rel="noopener noreferrer" className='text-slate-50 hover:text-slate-900 md:text-base text-sm text-center font-semibold md:py-2 py-1 md:px-4 px-2 rounded-xl bg-black hover:bg-slate-200'>Transalte Summarized text to any language here!</a>
+                <a href="https://giftednathan.github.io/translator/" target="_blank" rel="noopener noreferrer" className='text-slate-50 hover:text-slate-900 md:text-base text-sm text-center font-semibold md:py-2 py-1 md:px-4 px-2 rounded-xl bg-black hover:bg-slate-200'>Transalte Summarized text to any language here!</a>
             </div>
         </section>
     )
