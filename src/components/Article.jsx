@@ -6,13 +6,17 @@ import copyTextImage from '/src/assets/copy-text.png'
 import { useState } from 'react';
 
 const Article = () => {
-
+    const [url, setUrl] = useState('');
     const [summarizedData, setSummarizedData] = useState('');
     const [error, setError] = useState('') ;
     const [loading, setLoading] = useState(false);
 
-    const getSummary = async (e) => {
+    const handleChange = (e) => {
+        setUrl(e.target.value);
+    }
 
+    const getSummary = async (e) => {
+        
         e.preventDefault();
 
         const apiKey = import.meta.env.VITE_RAPID_API_KEY;
@@ -20,7 +24,7 @@ const Article = () => {
             method: 'GET',
             url: 'https://article-extractor-and-summarizer.p.rapidapi.com/summarize',
             params: {
-                url: 'https://time.com/6266679/musk-ai-open-letter/',
+                url: url,
                 length: '3'
             },
             headers: {
@@ -96,7 +100,7 @@ const Article = () => {
         <section className="max-w-screen-md m-auto p-4">
             <form className="flex border-2 rounded-xl shadow-xl overflow-x-hidden" onSubmit={getSummary} >
                 <img src={linkImage} alt="link image" className='lg:w-12 md:w-10 w-8 mr-1' />
-                <input type="text" className='flex-1 bg-blue-200 px-3 border-none outline-none font-semibold ' />
+                <input type="text" className='flex-1 bg-blue-200 px-3 border-none outline-none font-semibold ' onChange={handleChange} />
                 <button type='submit' className='w-12'>
                     <img src={enterImage} alt="enter image" className='w-full' />
                 </button>
